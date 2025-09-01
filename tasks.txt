@@ -8,3 +8,9 @@ sudo adduser devuser
 sudo usermod -aG iot_team devuser
 groups devuser    # to Verify that the user is added to the group
 
+task three: Change ownership of iot_logger to the developer + group.
+sudo chown -R devuser:iot_team /home/peter/iot_logger
+
+task four: Set permissions: group can read/write logs, others blocked.
+cd iot_logger
+sudo chmod -R 770 logs
