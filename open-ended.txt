@@ -2,3 +2,10 @@ Q1: How do Linux file permissions (r, w, x) work for files vs directories? Give 
 Linux file permissions are represented by r (read), w (write), and x (execute),for the user(owner), group and others
 ls -l shows up the file permissions like rwxrwxr--
 and we can change it with ' sudo chmod 777 file_name '
+
+Q2: Explain octal notation for permissions and what the umask command does. Give one calculation example.
+In Linux, file permissions (r, w, x) can be represented using octal notation (base-8 numbers)
+so if it was rwxr-xr-x it represents 755
+the umask works by subtracting from base values
+so if umask is 002 the new file will be: '753' which means rwxr-x-w-
+
