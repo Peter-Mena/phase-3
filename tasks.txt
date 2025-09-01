@@ -14,3 +14,11 @@ sudo chown -R devuser:iot_team /home/peter/iot_logger
 task four: Set permissions: group can read/write logs, others blocked.
 cd iot_logger
 sudo chmod -R 770 logs
+ 
+task five: Test access as new user, then remove test user.
+su - devuser
+whoami
+groups
+ls -l
+sudo pkill -u devuser
+sudo userdel -r devuser
