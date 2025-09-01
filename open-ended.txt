@@ -1,0 +1,4 @@
+Q1: How do Linux file permissions (r, w, x) work for files vs directories? Give an example using ls -l.
+Linux file permissions are represented by r (read), w (write), and x (execute),for the user(owner), group and others
+ls -l shows up the file permissions like rwxrwxr--
+and we can change it with ' sudo chmod 777 file_name '
