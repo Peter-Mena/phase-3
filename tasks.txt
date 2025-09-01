@@ -1,0 +1,10 @@
+task one: Create a new group iot_team and add your user to it.
+sudo groupadd iot_team
+sudo usermod -aG iot_team peter
+groups peter      # to Verify that the user is added to the group
+
+task two: Create a new developer user, add it to the group.
+sudo adduser devuser
+sudo usermod -aG iot_team devuser
+groups devuser    # to Verify that the user is added to the group
+
