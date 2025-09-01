@@ -9,6 +9,6 @@ so if it was rwxr-xr-x it represents 755
 the umask works by subtracting from base values
 so if umask is 002 the new file will be: '753' which means rwxr-x-w-
 
-question five:What is the difference between the root user and a normal user? Why is root considered dangerous?
+Q3: What is the difference between the root user and a normal user? Why is root considered dangerous?
 root has unlimited power over the entire system, while normal users are restricted for security.
 Root is dangerous because mistakes or malware can break the system or delete critical files. For example, rm -rf / as root can wipe the entire OS. Always use root with caution.
